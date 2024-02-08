@@ -37,7 +37,7 @@ def completion():
                 "content": f"code context: {code_context}"}
         ]
     )
-    completion_text = response.choices[0].message
+    completion_text = response.choices[0].message.content
     return {'completion': completion_text}
 
 if __name__ == '__main__':
